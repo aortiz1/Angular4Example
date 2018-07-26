@@ -2,19 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { AlgoComponent } from './algo/algo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import 'hammerjs';
 import {MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlgoComponent,
     LoginComponent
   ],
   imports: [
@@ -24,7 +24,8 @@ import {MatButtonModule, MatIconModule, MatToolbarModule} from '@angular/materia
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
