@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  email:String;
+  password:String;
+  router:Router;
 
-  constructor() { }
+  constructor( private _router:Router) { 
+    this.router= _router;
+  }
 
   ngOnInit() {
+  }
+
+  checkEmailAndpassword(){
+    if(this.email == "test@test.com" && this.password =="$Test12345")
+    {
+       alert ("Success");
+    }
+    else
+    {
+      alert("Wrong email or password");
+    }
   }
 
 }
