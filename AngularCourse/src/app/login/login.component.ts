@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     if(this.email == "test@test.com" && this.password =="$Test12345")
     {
        alert ("Success");
+       this.router.navigate(['./home']);
     }
     else
     {
