@@ -1,2 +1,7 @@
 node_modules
 .vs
+obj
+/APICourse/CourseAPI/Course.Database/bin
+bin
+/APICourse/CourseAPI/Course.Database/Course.Database.dbmdl
+/APICourse/CourseAPI/Course.Database/Course.Database.sqlproj.user
