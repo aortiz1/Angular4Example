@@ -1,0 +1,11 @@
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\bin\Debug\netcoreapp2.0\Course.API.deps.json
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\bin\Debug\netcoreapp2.0\Course.API.runtimeconfig.json
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\bin\Debug\netcoreapp2.0\Course.API.runtimeconfig.dev.json
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\bin\Debug\netcoreapp2.0\Course.API.dll
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\bin\Debug\netcoreapp2.0\Course.API.pdb
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\obj\Debug\netcoreapp2.0\Course.API.csproj.CoreCompileInputs.cache
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\obj\Debug\netcoreapp2.0\Course.API.AssemblyInfoInputs.cache
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\obj\Debug\netcoreapp2.0\Course.API.AssemblyInfo.cs
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\obj\Debug\netcoreapp2.0\Course.API.dll
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\obj\Debug\netcoreapp2.0\Course.API.pdb
+C:\other\Angular4\Angular4Example\APICourse\CourseAPI\CourseAPI\obj\Debug\netcoreapp2.0\Course.API.csprojResolveAssemblyReference.cache

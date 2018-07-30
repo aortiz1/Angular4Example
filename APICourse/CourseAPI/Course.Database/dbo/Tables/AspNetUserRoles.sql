@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[AspNetUserRoles] (
+    [Id]     UNIQUEIDENTIFIER NOT NULL,
+    [UserId] NVARCHAR (450)   NOT NULL,
+    [RoleId] NVARCHAR (450)   NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
