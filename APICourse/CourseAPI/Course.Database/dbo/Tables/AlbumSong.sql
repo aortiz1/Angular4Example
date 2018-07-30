@@ -3,5 +3,7 @@
 	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
     [AlbumId] UNIQUEIDENTIFIER NULL, 
     [SongId] UNIQUEIDENTIFIER NULL, 
-    [Image] VARCHAR(MAX) NULL
+    [Image] VARCHAR(MAX) NULL, 
+    CONSTRAINT [FK_AlbumSong_Album] FOREIGN KEY ([AlbumId]) REFERENCES dbo.[Album]([Id]), 
+    CONSTRAINT [FK_AlbumSong_Song] FOREIGN KEY ([SongId]) REFERENCES dbo.[Song]([Id])
 )

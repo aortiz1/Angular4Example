@@ -76,6 +76,7 @@
     <Build Include="dbo\Tables\PlayList.sql" />
     <Build Include="dbo\Tables\Song.sql" />
     <Build Include="dbo\Tables\AlbumSong.sql" />
+    <Build Include="dbo\Tables\PlayListSong.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Seed.sql" />
