@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{16ef42ee-8de0-4da3-b7b7-0ec45758cb49}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -59,6 +59,7 @@
     <Folder Include="Properties" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\AspNetUsers.sql" />
@@ -67,5 +68,20 @@
     <Build Include="dbo\Tables\AspNetUserClaims.sql" />
     <Build Include="dbo\Tables\AspNetRoles.sql" />
     <Build Include="dbo\Tables\AspNetRoleClaims.sql" />
+    <Build Include="dbo\Tables\ArtistBand.sql" />
+    <Build Include="dbo\Tables\ArtistType.sql" />
+    <Build Include="dbo\Tables\Album.sql" />
+    <Build Include="dbo\Tables\AlbumArtist.sql" />
+    <Build Include="dbo\Tables\User.sql" />
+    <Build Include="dbo\Tables\PlayList.sql" />
+    <Build Include="dbo\Tables\Song.sql" />
+    <Build Include="dbo\Tables\AlbumSong.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Seed.sql" />
+    <None Include="Scripts\InitialData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Course.Database.refactorlog" />
   </ItemGroup>
 </Project>

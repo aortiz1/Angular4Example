@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Artist]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] VARCHAR(MAX) NULL, 
+    [Description] VARCHAR(250) NULL, 
+    [Bio] VARCHAR(MAX) NULL
+)
