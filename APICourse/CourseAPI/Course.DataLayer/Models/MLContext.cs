@@ -22,12 +22,16 @@ namespace Course.DataLayer.Models
         public virtual DbSet<Song> Song { get; set; }
         public virtual DbSet<User> User { get; set; }
 
+        public MLContext(DbContextOptions<MLContext> options):base(options)
+        {
+
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer(@"Server=SCMWS004\SQLEXPRESS;Database=Ang4DB;Persist Security Info=True;User ID=LEadmin;Password=@Dev.Scio.18");
             }
         }
 

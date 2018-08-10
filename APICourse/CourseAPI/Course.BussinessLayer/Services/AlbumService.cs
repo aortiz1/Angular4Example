@@ -21,5 +21,10 @@ namespace Course.BussinessLayer.Services
         {
             return await _albumRepository.GetAllAlbums();
         }
+
+        public async Task<List<Album>> GetAllAlbumsByArtist(Guid artistId)
+        {
+            return await _albumRepository.GetAllAlbumsByArtist(artistId);
+        }
     }
 }

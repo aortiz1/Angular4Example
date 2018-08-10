@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Course.BussinessLayer.Contracts;
+using Course.BussinessLayer.Services;
+using Course.DataLayer.Contracts;
+using Course.DataLayer.Models;
+using Course.DataLayer.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -30,6 +36,11 @@ namespace Course.API
             corsBuilder.AllowAnyOrigin();
             corsBuilder.AllowCredentials();
 
+            services.AddDbContext<MLContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IAlbumService, AlbumService>();
+            services.AddScoped<IAlbumRepository, AlbumRepository>();
             services.AddMvc();
         }
 

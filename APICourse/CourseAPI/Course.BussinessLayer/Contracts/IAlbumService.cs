@@ -8,6 +8,7 @@ namespace Course.BussinessLayer.Contracts
 {
     public interface IAlbumService
     {
-       Task<List<Album>> GetAllAlbums();
+        Task<List<Album>> GetAllAlbums();
+        Task<List<Album>> GetAllAlbumsByArtist(Guid artistId);
     }
 }
